@@ -31,7 +31,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: rgb(131, 190, 241);
+  background-color: #e6f0ff;
   box-shadow: 0 0 0.4rem #5a6473;
   font-size: 0.9rem;
   display: flex;
@@ -56,24 +56,24 @@ header {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  gap: 35px;
+  gap: 5px;
   left: 0;
 }
 
 .menu > a {
-  background-color: rgba(21, 117, 155, 0.2);
+  /* background-color: rgba(21, 117, 155, 0.2); */
   font-size: 1.1rem;
-  padding: 0.7rem 2rem;
-  color: black;
+  padding: 0.7rem 1rem;
+  color: #000339;
   font-weight: 600;
   border-radius: 0.6rem;
-  min-width: 160px;
   transition: all 0.2s ease-in-out;
 }
 
-.menu > a:hover {
-  color: white;
-  background-color: rgba(21, 117, 155, 0.4);
+.active {
+  background-color: #0f1b4c !important;
+  color: white !important;
+  font-weight: 800 !important;
 }
 
 section {
