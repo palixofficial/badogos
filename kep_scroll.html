@@ -44,37 +44,4 @@
         background-color: #f7f8fd;
         padding: 100px 50px;
     }
-
-    .stock-ticker {
-        font-size: 15px;
-        padding-block: 8px;
-        overflow: hidden;
-        user-select: none;
-
-        --gap: 20px;
-        display: flex;
-        gap: var(--gap);
-    }
-
-    .stock-ticker ul {
-        list-style: none;
-        flex-shrink: 0;
-        min-width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: var(--gap);
-
-        animation: scroll 20s linear infinite;
-    }
-
-    .stock-ticker:hover ul {
-        animation-play-state: paused;
-    }
-
-    @keyframes scroll {
-        to {
-            transform: translateX(calc(-100% - var(--gap)));
-        }
-    }
 </style>
