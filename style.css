@@ -25,6 +25,14 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow-x: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    #2646a4,
+    #12428c,
+    #0e3c73,
+    #16355a,
+    #1d2d41
+  );
 }
 
 section {
@@ -99,9 +107,13 @@ section#kezdolap {
 }
 
 /* IMAGE SCROLLING */
+section.slider {
+  max-width: 100%;
+}
+
 .stock-ticker {
   font-size: 15px;
-  padding-block: 5px;
+  padding-block: 10px;
   overflow: visible;
   user-select: none;
 
@@ -118,13 +130,21 @@ section#kezdolap {
   justify-content: space-between;
   align-items: center;
   gap: var(--gap);
-  animation: scroll 30s linear infinite;
+  animation: scroll 60s linear infinite;
+  z-index: 2;
 }
 
 .stock-ticker ul img {
   height: 250px;
   width: 100%;
   aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.stock-ticker ul img:hover {
+  transform: scale(1.1);
 }
 
 .stock-ticker:hover ul {
@@ -139,11 +159,6 @@ section#kezdolap {
   to {
     transform: translateX(calc(-100% - var(--gap)));
   }
-}
-
-section.slider {
-  max-width: 100%;
-  overflow: hidden;
 }
 
 /* --------------- */
