@@ -8,11 +8,14 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  color: white;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
 }
 
 html {
   scroll-behavior: smooth;
-  color: white;
   font-family: "Poppins", sans-serif;
 }
 
@@ -26,14 +29,7 @@ body {
   justify-content: center;
   overflow-x: hidden;
   max-width: 100vw !important;
-  background-image: linear-gradient(
-    to bottom,
-    #2646a4,
-    #12428c,
-    #0e3c73,
-    #16355a,
-    #1d2d41
-  );
+  background: #0f3d78;
 }
 
 section {
@@ -88,6 +84,61 @@ section#kezdolap {
   max-width: 900px !important;
 }
 
+.kartyak {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: -80px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.kartya {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #0f3d78;
+  padding: 25px;
+  color: black;
+  border-radius: 2px;
+}
+
+.kartya > h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.kartya > p {
+  font-size: 15px;
+}
+
+.kartyak img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.kartya > button,
+.gomb {
+  background-color: #0f3d78;
+  padding: 5px 25px;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.kartya > button:hover,
+.gomb:hover {
+  transform: scale(1.05);
+  color: #0f3d78;
+  background-color: white;
+}
+
 .box {
   padding: 25px;
   max-width: 800px;
@@ -112,6 +163,7 @@ section#kezdolap {
 section.slider {
   max-width: 100%;
   overflow: hidden;
+  text-align: center;
 }
 
 .stock-ticker {
@@ -170,4 +222,30 @@ section.slider {
   .container {
     flex-direction: column;
   }
+
+  .kartyak {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: -80px;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+}
+
+footer {
+  width: 100vw !important;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
