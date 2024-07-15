@@ -29,7 +29,7 @@ body {
   justify-content: center;
   overflow-x: hidden;
   max-width: 100vw !important;
-  background: #0f3d78;
+  background: white;
 }
 
 section {
@@ -99,7 +99,7 @@ section#kezdolap {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  background-color: #0f3d78;
+  background-color: white;
   padding: 25px;
   color: black;
   border-radius: 2px;
