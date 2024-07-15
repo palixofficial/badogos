@@ -1,0 +1,39 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contentBlock {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cardPicture {
+    max-width: 110px;
+    margin: auto;
+}
+
+.cardH3tag {
+    color: #333;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.cardPtag {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .block123 {
+        width: calc(100% - 40px);
+    }
+}
