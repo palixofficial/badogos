@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+:root {
+  --fill: lime;
+  --stroke: yellow;
+}
+
 *,
 *::before,
 *::after {
@@ -36,7 +41,7 @@ section {
   width: 100vw !important;
   max-width: 1200px;
   margin: auto;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 
 section#kezdolap {
@@ -85,6 +90,13 @@ section#kezdolap {
   padding: 0 0px;
   gap: 45px;
   max-width: 1200px !important;
+}
+
+.kartyak-container {
+  max-width: 100vw !important;
+  background: #00000008;
+  /* box-shadow: 0 0 20px black; */
+  padding-bottom: 50px;
 }
 
 .kartyak {
@@ -214,6 +226,59 @@ section.slider {
   animation: scroll 50s linear infinite alternate-reverse;
 }
 
+.map {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  position: relative;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  /* background: url("assets/img/texture.jpg") no-repeat center; */
+  background-color: #00000008;
+  z-index: -1;
+  filter: grayscale(1);
+}
+
+#map {
+  max-width: 1200px;
+  backdrop-filter: blur(3px);
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.terkep-bal {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 450px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2c2c2;
+  border-radius: 2px;
+}
+
+.terkep-jobb {
+  max-width: 700px;
+}
+
+#svg2 {
+  stroke: rgb(243, 7, 7) !important;
+}
+
 @keyframes scroll {
   to {
     transform: translateX(calc(-100% - var(--gap)));
@@ -238,7 +303,7 @@ section.slider {
     margin-top: -80px;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 10px;
   }
 }
 

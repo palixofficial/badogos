@@ -18,7 +18,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-
+  box-shadow: 0 0 1px 1px black;
   transition: all 0.2s ease-in-out;
 }
 
