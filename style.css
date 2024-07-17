@@ -322,3 +322,18 @@ footer {
   justify-content: center;
   gap: 5px;
 }
+
+.boxH1{
+  color: white;
+  text-align: center;
+}
+
+/* kapcsolat */
+section:first-child{
+  padding-top: 0;
+}
+.elvalaszto{
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+}
